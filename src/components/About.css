@@ -1,0 +1,186 @@
+.about {
+  background: #ffffff;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+/* --------------------------------------------------------------------------
+   Image column
+   -------------------------------------------------------------------------- */
+.about__media {
+  position: relative;
+  padding: 0 1.5rem 1.75rem 0;
+}
+
+.about__frame {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--mint-200);
+  box-shadow: var(--shadow-md);
+}
+
+.about__frame img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+.about__focus {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 232px;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px -26px rgba(6, 42, 49, 0.45);
+}
+
+.about__focus-label {
+  margin: 0 0 0.55rem;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.about__focus-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.about__focus-chips .chip {
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Copy column
+   -------------------------------------------------------------------------- */
+.about__content h2 em {
+  font-style: italic;
+  color: var(--teal-700);
+  font-weight: 400;
+}
+
+.about__content > p {
+  max-width: 42rem;
+}
+
+.about__content > p + p {
+  margin-top: 0.85rem;
+}
+
+.about__pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.3rem 1.6rem;
+  margin: 2rem 0;
+}
+
+.about__pillars li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.about__pillar-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border-radius: 11px;
+  background: var(--mint-100);
+  color: var(--teal-700);
+}
+
+.about__pillar-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.about__pillars h3 {
+  margin: 0 0 0.15rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+.about__pillars p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.about__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--mint-50);
+  color: #5c7573;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.about__note svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin-top: 0.15rem;
+  color: var(--teal-500);
+}
+
+@media (max-width: 960px) {
+  .about__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+  .about__media {
+    max-width: 34rem;
+    width: 100%;
+    padding-right: 1.25rem;
+  }
+
+  .about__content > p,
+  .about__note {
+    max-width: 44rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__frame img {
+    aspect-ratio: 5 / 5.4;
+  }
+
+  .about__focus {
+    width: 210px;
+    right: 0;
+    bottom: 0;
+    padding: 0.85rem 0.95rem;
+  }
+
+  .about__pillars {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.1rem;
+    margin: 1.6rem 0;
+  }
+}

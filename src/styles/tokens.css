@@ -1,0 +1,55 @@
+:root {
+  color-scheme: light;
+
+  /* Brand palette */
+  --ink-950: #04232a;
+  --ink-900: #062a31;
+  --ink-800: #0a3941;
+  --ink-700: #11474f;
+  --teal-800: #07514d;
+  --teal-700: #0b5f5a;
+  --teal-600: #0c7268;
+  --teal-500: #12897c;
+  --teal-400: #2ba393;
+  --teal-300: #7fcebd;
+  --teal-200: #a9e0d2;
+
+  --mint-50: #f4fbf8;
+  --mint-100: #e8f6f0;
+  --mint-200: #d5eee5;
+  --mint-300: #bce4d7;
+
+  --paper: #ffffff;
+  --sand-50: #fbfaf7;
+  --line: #e2ece8;
+  --line-strong: #cfe0da;
+
+  --text: #465f5e;
+  --text-strong: #0c2f34;
+  --muted: #5b7674;
+
+  --whatsapp: #1faa55;
+
+  /* Typography */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --container: 1180px;
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  --section-y: clamp(4rem, 8vw, 7.5rem);
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 34px;
+  --radius-pill: 999px;
+
+  /* Effects */
+  --shadow-xs: 0 1px 2px rgba(6, 42, 49, 0.06);
+  --shadow-sm: 0 8px 20px -12px rgba(6, 42, 49, 0.22);
+  --shadow-md: 0 22px 48px -28px rgba(6, 42, 49, 0.38);
+  --shadow-lg: 0 44px 90px -44px rgba(6, 42, 49, 0.48);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
